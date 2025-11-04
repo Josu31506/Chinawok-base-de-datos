@@ -8,7 +8,7 @@ Este proyecto genera datos de prueba ficticios pero realistas para todas las tab
 
 ## ✨ Características
 
-- ✅ **Generación automatizada** de 8 tablas interrelacionadas
+- ✅ **Generación automatizada** de 9 tablas interrelacionadas
 - ✅ **Validación con JSON Schema** para todos los datos
 - ✅ **Integridad referencial** entre tablas (pedidos → usuarios → productos)
 - ✅ **Datos realistas** para Lima, Perú (direcciones, teléfonos, menú típico)
@@ -61,6 +61,7 @@ TABLE_COMBOS=ChinaWok-Combos
 TABLE_PEDIDOS=ChinaWok-Pedidos
 TABLE_OFERTAS=ChinaWok-Ofertas
 TABLE_RESENAS=ChinaWok-Resenas
+TABLE_TOKENS=ChinaWok-Tokens
 
 # Usuario administrador único
 ADMIN_EMAIL=admin@chinawok.pe
@@ -208,6 +209,14 @@ Atributos:
   - empleados_dni: string[] (0-3 empleados)
 ```
 
+### 9. **Tokens**
+```
+PK: token
+Atributos:
+  - correo_usuario: string
+  - fecha_creacion: datetime
+  - expiracion: datetime
+```
 ## 🏗️ Arquitectura del Proyecto
 
 ```
